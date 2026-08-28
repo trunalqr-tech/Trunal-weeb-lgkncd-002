@@ -3395,3 +3395,40 @@ body.dark .gallery-photo {
 
     border-radius: 23px;
 }
+/* =========================================
+   FIX ALBUM MOBILE - KHÔNG CHỚP KHI CUỘN
+========================================= */
+
+@media (max-width: 600px) {
+
+    #cloudGallerySpace {
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+
+    .gallery-photo {
+        transform:
+            translate3d(0, 0, 0)
+            rotate(var(--photo-rotate));
+
+        opacity: 1 !important;
+
+        visibility: visible !important;
+
+        will-change: auto;
+
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+    }
+
+    .gallery-photo.show {
+        opacity: 1 !important;
+
+        transform:
+            translate3d(0, 0, 0)
+            rotate(var(--photo-rotate));
+    }
+
+}
