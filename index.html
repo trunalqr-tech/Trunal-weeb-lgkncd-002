@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trunal Qr</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BẦU TRỜI
+    ========================== -->
+
+    <div class="sky-background">
+
+        <div class="stars"></div>
+
+        <div class="background-cloud cloud-a"></div>
+        <div class="background-cloud cloud-b"></div>
+        <div class="background-cloud cloud-c"></div>
+        <div class="background-cloud cloud-d"></div>
+
+    </div>
+
+
+    <!-- =========================
+         3 MÂY TRANG TRÍ GÓC
+    ========================== -->
+
+    <div class="corner-cloud corner-top-left">
+        <img src="images/Tru (7).jpg" alt="">
+    </div>
+
+    <div class="corner-cloud corner-top-right">
+        <img src="images/Tru (8).jpg" alt="">
+    </div>
+
+    <div class="corner-cloud corner-bottom-right">
+        <img src="images/Tru (9).jpg" alt="">
+    </div>
+
+
+    <!-- =========================
+         THANH ĐIỀU HƯỚNG
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="brand">
+            Trunal Qr
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="#home" class="nav-link active">
+                <span>⌂</span>
+                <label>Trang chủ</label>
+            </a>
+
+            <a href="#album" class="nav-link">
+                <span>▧</span>
+                <label>Album</label>
+            </a>
+
+            <a href="#memories" class="nav-link">
+                <span>♡</span>
+                <label>Kỷ niệm</label>
+            </a>
+
+            <a href="#playlist" class="nav-link">
+                <span>♫</span>
+                <label>Playlist</label>
+            </a>
+
+            <a href="#letters" class="nav-link">
+                <span>✈</span>
+                <label>Lời nhắn</label>
+            </a>
+
+        </nav>
+
+
+        <!-- CÀI ĐẶT -->
+
+        <button class="settings-button" id="settingsButton">
+            ⚙
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         BẢNG CÀI ĐẶT
+    ========================== -->
+
+    <div class="settings-panel" id="settingsPanel">
+
+        <div class="settings-header">
+
+            <div>
+                <small>TRUNAL QR</small>
+                <h3>Cài đặt</h3>
+            </div>
+
+            <button id="closeSettings">×</button>
+
+        </div>
+
+
+        <div class="theme-setting">
+
+            <div>
+                <strong>Giao diện</strong>
+                <span id="themeText">Chế độ sáng</span>
+            </div>
+
+
+            <button
+                class="theme-switch"
+                id="themeSwitch"
+                aria-label="Đổi giao diện"
+            >
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <main>
+
+
+        <!-- =========================
+             TRANG CHỦ
+        ========================== -->
+
+        <section id="home" class="hero-section">
+
+            <div class="hero-inner">
+
+                <p class="hero-small">
+                    OUR LITTLE UNIVERSE
+                </p>
+
+
+                <!-- TÊN 2 NGƯỜI -->
+<div class="hero-photos">
+    <img src="images/boy.jpg" class="hero-boy" alt="Bạn nam">
+    <img src="images/girl.jpg" class="hero-girl" alt="Bạn nữ">
+</div>
+                <div class="couple-names">
+
+                    <h1 id="boyName">
+                        Tên Nam
+                    </h1>
+
+
+                    <div class="heart-container">
+
+                        <div class="heart">
+                            ♥
+                        </div>
+
+                        <span>
+                            together
+                        </span>
+
+                    </div>
+
+
+                    <h1 id="girlName">
+                        Tên Nữ
+                    </h1>
+
+                </div>
+
+
+                <p class="start-date">
+                    Một câu chuyện bắt đầu từ
+                    <span id="startDateText">
+                        20.08.2025
+                    </span>
+                </p>
+
+
+                <!-- BỘ ĐẾM -->
+
+                <div class="love-counter">
+
+                    <div class="counter-box">
+                        <strong id="days">0</strong>
+                        <span>Ngày</span>
+                    </div>
+
+                    <div class="counter-box">
+                        <strong id="hours">0</strong>
+                        <span>Giờ</span>
+                    </div>
+
+                    <div class="counter-box">
+                        <strong id="minutes">0</strong>
+                        <span>Phút</span>
+                    </div>
+
+                    <div class="counter-box">
+                        <strong id="seconds">0</strong>
+                        <span>Giây</span>
+                    </div>
+
+                </div>
+
+
+                <p class="hero-message">
+                    Từ một cuộc gặp gỡ nhỏ,
+                    chúng ta đã tạo nên cả một bầu trời.
+                </p>
+
+
+                <a href="#album" class="explore-button">
+                    Khám phá câu chuyện
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ALBUM
+        ========================== -->
+
+        <section id="album" class="section">
+
+            <div class="section-title">
+
+                <span>01</span>
+
+                <h2>
+                    Những khoảnh khắc
+                </h2>
+
+                <p>
+                    Những hình ảnh nhỏ,
+                    nhưng lại giữ những câu chuyện rất lớn.
+                </p>
+
+            </div>
+
+
+          <div class="album-entrance" id="albumEntrance">
+    <div class="album-photo-box">
+
+        <div
+            class="album-preview-photos"
+            id="albumPreviewPhotos"
+        ></div>
+
+        <div class="album-box-main">
+            <span>▧</span>
+            <strong>Kho kỷ niệm</strong>
+            <small>CHẠM ĐỂ MỞ</small>
+        </div>
+
+    </div>
+</div>
+
+<div class="photo-gallery" id="cloudGallery">
+
+    <div class="photo-gallery-top">
+        <span>OUR MEMORY ALBUM</span>
+        <button id="closeCloudGallery">×</button>
+    </div>
+
+    <div
+        class="photo-gallery-space"
+        id="cloudGallerySpace"
+    ></div>
+
+</div>
+        </section>
+
+
+
+        <!-- =========================
+             KỶ NIỆM
+        ========================== -->
+
+        <section id="memories" class="section memories-section">
+
+            <div class="section-title">
+
+                <span>02</span>
+
+                <h2>
+                    Những ngày đã qua
+                </h2>
+
+                <p>
+                    Từng dấu mốc nhỏ trên hành trình của hai chúng ta.
+                </p>
+
+            </div>
+
+
+            <div
+                class="memory-road"
+                id="memoryRoad"
+            ></div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PLAYLIST
+        ========================== -->
+
+        <section id="playlist" class="section playlist-section">
+
+            <div class="section-title">
+
+                <span>03</span>
+
+                <h2>
+                    Những giai điệu của chúng ta
+                </h2>
+
+                <p>
+                    Có những bài hát chỉ cần vang lên,
+                    cả một ký ức lại trở về.
+                </p>
+
+            </div>
+
+
+            <div
+                class="music-player"
+                id="musicPlayer"
+            >
+
+                <!-- ẢNH NỀN -->
+
+                <div
+                    class="music-background"
+                    id="musicBackground"
+                ></div>
+
+
+                <div class="music-overlay"></div>
+
+
+                <div class="music-content">
+
+
+                    <div class="album-cover">
+
+                        <img
+                            id="currentSongImage"
+                            src="images/song (1).jpg"
+                            alt="Album"
+                        >
+
+                    </div>
+
+
+                    <div class="music-info">
+
+                        <small>
+                            NOW PLAYING
+                        </small>
+
+                        <h3 id="currentSongTitle">
+                            Chưa có bài hát
+                        </h3>
+
+                        <p id="currentSongArtist">
+                            Trunal Qr
+                        </p>
+
+                    </div>
+
+
+                    <!-- THANH CHẠY -->
+
+                    <div class="progress-area">
+
+                        <span id="currentTime">
+                            0:00
+                        </span>
+
+                        <input
+                            type="range"
+                            id="progressBar"
+                            min="0"
+                            max="100"
+                            value="0"
+                        >
+
+                        <span id="duration">
+                            0:00
+                        </span>
+
+                    </div>
+
+
+                    <!-- NÚT NHẠC -->
+
+                    <div class="music-controls">
+
+                        <button id="prevSong">
+                            ⏮
+                        </button>
+
+                        <button
+                            id="playSong"
+                            class="main-play"
+                        >
+                            ▶
+                        </button>
+
+                        <button id="nextSong">
+                            ⏭
+                        </button>
+
+                    </div>
+
+
+                    <!-- DANH SÁCH -->
+
+                    <div
+                        class="song-list"
+                        id="songList"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <audio id="audioPlayer"></audio>
+
+        </section>
+
+
+
+        <!-- =========================
+             LỜI NHẮN
+        ========================== -->
+
+        <section id="letters" class="section letters-section">
+
+            <div class="section-title">
+
+                <span>04</span>
+
+                <h2>
+                    Những điều chưa nói
+                </h2>
+
+                <p>
+                    Hai người, hai lời nhắn,
+                    cùng gửi qua một bầu trời.
+                </p>
+
+            </div>
+
+
+            <div class="letter-sky">
+
+
+                <!-- NAM -->
+
+                <div class="person-letter boy-letter">
+
+                    <div class="person-photo">
+
+                        <img
+                            src="images/boy.jpg"
+                            alt="Bạn nam"
+                        >
+
+                    </div>
+
+
+                    <div class="plane-wrapper">
+
+                        <button
+                            class="plane-button"
+                            data-letter="boy"
+                        >
+                            ✈
+                        </button>
+
+                        <span>
+                            Một lời nhắn
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MÂY GIỮA -->
+
+                <div class="middle-cloud">
+
+                    <div class="cloud-shape">
+
+                        <div class="cloud-circle circle-1"></div>
+                        <div class="cloud-circle circle-2"></div>
+                        <div class="cloud-circle circle-3"></div>
+
+                        <div class="cloud-text">
+
+                            <small>
+                                OUR SKY
+                            </small>
+
+                            <strong>
+                                Những điều<br>
+                                chưa nói
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- NỮ -->
+
+                <div class="person-letter girl-letter">
+
+                    <div class="person-photo">
+
+                        <img
+                            src="images/girl.jpg"
+                            alt="Bạn nữ"
+                        >
+
+                    </div>
+
+
+                    <div class="plane-wrapper">
+
+                        <button
+                            class="plane-button"
+                            data-letter="girl"
+                        >
+                            ✈
+                        </button>
+
+                        <span>
+                            Một lời nhắn
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         PHOTO MODAL
+    ========================== -->
+
+    <div
+        class="photo-modal"
+        id="photoModal"
+    >
+
+        <button
+            id="closePhoto"
+            class="close-modal"
+        >
+            ×
+        </button>
+
+        <img
+            id="modalImage"
+            src=""
+            alt=""
+        >
+
+    </div>
+
+
+
+    <!-- =========================
+         LETTER MODAL
+    ========================== -->
+
+    <div
+        class="letter-modal"
+        id="letterModal"
+    >
+
+        <div class="letter-card">
+
+            <button
+                id="closeLetter"
+                class="close-letter"
+            >
+                ×
+            </button>
+
+
+            <div class="letter-icon">
+                ✈
+            </div>
+
+
+            <small>
+                MỘT LỜI NHẮN
+            </small>
+
+
+            <h3 id="letterTitle">
+                Dành cho em
+            </h3>
+
+
+            <div
+                class="letter-text"
+                id="letterText"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Trunal Qr
+        </div>
+
+        <p>
+            Một góc nhỏ lưu giữ những điều thuộc về hai người.
+        </p>
+
+        <span>
+            Made with ♡
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
